@@ -4,16 +4,6 @@
 
 ---
 
-## Screenshots
-
-> _Load the extension in Chrome, open the side panel, and screenshot your setup here._
-
-| Sidebar — Open Tabs | Workspaces | Sessions |
-|---|---|---|
-| ![tabs](screenshots/tabs.png) | ![workspaces](screenshots/workspaces.png) | ![sessions](screenshots/sessions.png) |
-
----
-
 ## Features
 
 - **Side Panel** — Persistent vertical sidebar via Chrome's `sidePanel` API; stays open as you browse.
