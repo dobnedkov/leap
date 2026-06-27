@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "Leap — Tab & Workspace Manager",
+  "version": "1.0.0",
+  "description": "A powerful sidebar tab and workspace manager for Chrome. Organize tabs into workspaces, save sessions, and navigate your browser with ease.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background/serviceWorker.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "sidePanel",
+    "activeTab"
+  ],
+  "commands": {
+    "open-side-panel": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      },
+      "description": "Open Leap sidebar"
+    },
+    "save-session": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Save current tabs as a session"
+    },
+    "search-tabs": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "Command+Shift+F"
+      },
+      "description": "Focus tab search in sidebar"
+    }
+  },
+  "action": {
+    "default_title": "Open Leap",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
